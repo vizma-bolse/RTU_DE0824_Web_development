@@ -4,5 +4,17 @@ body {
 
 /* Applying a background rule to all paragraphs */
 p {
-    background-color: blue;
+    background-color: rgb(19, 19, 215);
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h3 {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.internal-h3 {
+    background-color: aquamarine;
 }
