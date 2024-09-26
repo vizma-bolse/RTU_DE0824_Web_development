@@ -1,0 +1,8 @@
+body {
+    background-color: blueviolet;
+}
+
+/* Applying a background rule to all paragraphs */
+p {
+    background-color: blue;
+}
