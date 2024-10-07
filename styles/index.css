@@ -1,3 +1,17 @@
+body {
+    margin: 2%;
+
+}
+
 img {
-    width: 300px
-  }
+    width: 300px;
+}
+
+@font-face {
+    font-family: Luminari;
+    src: url(/fonts/Luminari-Regular.ttf);
+}
+
+h1 {
+    font-family: Luminari;
+}
