@@ -1,6 +1,5 @@
 body {
     margin: 2%;
-
 }
 
 img {
@@ -9,7 +8,7 @@ img {
 
 @font-face {
     font-family: 'Luminari';
-    src: url('/fonts/Luminari-Regular.ttf') format('truetype');
+    src: url('../fonts/Luminari-Regular.ttf') format('truetype');
 }
 
 h1, h2, h3 {
