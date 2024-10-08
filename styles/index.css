@@ -18,3 +18,7 @@ h1, h2, h3 {
 p, li, a {
     font-family: 'Georgia', serif;
 }
+
+.img-with-text {
+    font-size: 80%;
+}
