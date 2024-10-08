@@ -8,10 +8,10 @@ img {
 }
 
 @font-face {
-    font-family: Luminari;
-    src: url(/fonts/Luminari-Regular.ttf);
+    font-family: 'Luminari';
+    src: url(/fonts/Luminari-Regular.ttf) format('ttf');
 }
 
 h1, h2, h3 {
-    font-family: Luminari;
+    font-family: 'Luminari';
 }
