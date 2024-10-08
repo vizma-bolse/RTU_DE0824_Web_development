@@ -1,5 +1,6 @@
 body {
     margin: 2%;
+    background-color: #f2e9e4;
 }
 
 img {
@@ -13,6 +14,7 @@ img {
 
 h1, h2, h3 {
     font-family: 'Luminari', serif;
+    color: #22223b;
 }
 
 p, li, a {
@@ -21,4 +23,8 @@ p, li, a {
 
 .img-with-text {
     font-size: 80%;
+}
+
+hr {
+    color: #4a4e69;
 }
