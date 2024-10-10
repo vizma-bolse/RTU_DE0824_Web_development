@@ -1,0 +1,41 @@
+/* Standard font size for the body */
+
+body {
+    font-size: 24px;
+}
+
+header {
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Applying media queries by taking the width of the screen into account */
+/* Going from the smallest screen to largest */
+
+/*First break point will be 576px */
+
+@media (min-width: 576px) {
+    body {
+        font-size: 20px;
+    }
+    header {
+        background-color: lightgreen;
+    }
+}
+
+/* Next break point - 768px */
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        background-color: lightyellow;
+    }
+
+    p {
+        background-color: lightsalmon;
+    }
+}
