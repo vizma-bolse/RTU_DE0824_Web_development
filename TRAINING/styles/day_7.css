@@ -10,3 +10,63 @@ a {
 a:hover {
     background-color: lightcoral;
 }
+
+a:visited {
+    color: gray;
+}
+
+.boxy {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:10px;
+    background-color: lightseagreen;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 300px 200px;
+    gap: 10px;
+    grid-template-rows: 120px 75px 90px;
+    grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box7 box7 box6";
+}
+
+.box1 {
+    grid-area: box1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-child {
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
