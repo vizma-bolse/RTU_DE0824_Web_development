@@ -1,0 +1,12 @@
+a {
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: lightcoral;
+}

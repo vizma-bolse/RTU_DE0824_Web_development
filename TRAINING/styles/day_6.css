@@ -39,3 +39,25 @@ header {
         background-color: lightsalmon;
     }
 }
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexbox-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:10px;
+    background-color: aliceblue;
+}
+
+.mini-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
