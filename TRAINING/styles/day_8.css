@@ -1,0 +1,78 @@
+* {
+    padding: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sand-serif;
+}
+
+body {
+    margin: 20px;
+}
+
+.transformation-example {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.fox-box{
+    width: 150px;
+    height: 150px;
+}
+
+/* rotating the fox when you hover over it */
+
+.fox-box-1:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+/*adding a box shadow on hover */
+
+.fox-box-2:hover {
+    box-shadow: 5px 5px 5px 5px blue;
+    transition: box-shadow 1s;
+}
+
+.fox-box-3:hover {
+    transform: scale(0.5);
+    transition: transform 2s;
+}
+
+.fox-box-4 {
+    transform: scale(0.25);
+}
+
+.fox-box-5:hover {
+    animation: myskew 1.5s infinite;
+}
+
+@keyframes myskew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+    50% {
+        transform: skew(20deg, 20deg);
+    }
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+.fox-box-6:hover {
+    animation: mymove 2.5s infinite;
+}
+
+@keyframes mymove {
+    25%,
+    75% {
+      scale: 100%;
+    }
+  
+    50% {
+      scale: 200%;
+    }
+}
