@@ -52,8 +52,6 @@ h2, h3, p {
 
 /* General button styles */
 button {
-    width: 20%; /* or a specific size in vw/em */
-    height: 50px; /* example height */
     background-color: #e43d12; /* Primary color for buttons */
     color: white; /* Text color */
     border: none; /* Remove default borders */
@@ -242,6 +240,11 @@ button:active {
         display: flex; /* Show buttons on tablet and laptop screens */
     }
 
+    button {
+        width: 100px;
+        height: 35px;
+    }
+
     .tools {
         display: flex;
         justify-content: flex-end;
@@ -323,6 +326,11 @@ button:active {
 
     .nav-buttons {
         display: flex; /* Show buttons on tablet and laptop screens */
+    }
+
+    button {
+        width: 120px;
+        height: 40px;
     }
 
     .tools {
