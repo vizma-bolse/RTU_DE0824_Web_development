@@ -210,6 +210,7 @@ button:active {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr; /* Adjust for large screens */
         width: 100%; /* Ensure it fits within the page */
+        max-width: 100%;
         padding: 10px; /* Adjust padding if needed */
         box-sizing: border-box; /* Include padding in total width */
     }
@@ -240,10 +241,11 @@ button:active {
 
     .nav-buttons {
         display: flex; /* Show buttons on tablet and laptop screens */
+        margin: 0 5px;
     }
 
     button {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .tools {
