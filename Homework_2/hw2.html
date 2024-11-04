@@ -6,73 +6,96 @@
     <meta name="keywords" content="Johann Christoph Brotze, Johans Kristofs Broce, history, vēsture, illustrations, zīmējumi">
     <title>Johans Kristofs Broce</title>
     <link rel="stylesheet" href="/Homework_2/styles/hw2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="container">
     
     <header id="top">
-        <div class="brand">
-            <img src="/Homework_2/img/broce_logo.png" alt="logo" id="logo">
-        </div>
+        <div class="header-container">
+            <div class="brand">
+                <img src="/Homework_2/img/broce_logo.png" alt="logo" id="logo">
+            </div>
 
-        <div class="nav">
-            <button onclick="location.href='#biography'">Biogrāfija</button>
-            <button onclick="location.href='#art'">Radošā darbība</button>
-            <button onclick="location.href='#significance'">Vēsturiskā nozīme</button>
-        </div>
+            <nav class="nav">
+                <div class="nav-dropdown">
+                    <select onchange="location = this.value;">
+                        <option value="" disabled selected hidden>Izvēlne</option>
+                        <option value="#biography">Biogrāfija</option>
+                        <option value="#art">Radošā darbība</option>
+                        <option value="#significance">Vēsturiskā nozīme</option>
+                    </select>
+                </div>
+                <div class="nav-buttons">
+                    <button onclick="location.href='#biography'">Biogrāfija</button>
+                    <button onclick="location.href='#art'">Radošā darbība</button>
+                    <button onclick="location.href='#significance'">Vēsturiskā nozīme</button>
+                </div>
+            </nav>
 
-        <div class="tools">
-            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="tools">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
         </div>
     </header>
 
     <div class="hero">
         <div class="hero-feature">
-            <img src="/Homework_2/img/hero_feature.png" alt="get to know Broce">
+            <img src="/Homework_2/img/hero_feature.png" alt="get to know Broce" id="feature-img">
         </div>
 
         <div class="call-to-action">
-            <h1>apskati Broces <a href="https://www.acadlib.lu.lv/broce/">manuskriptu</a> un <a href="https://www.acadlib.lu.lv/izstades/digitalizacija/jkbroces-kolekcija/">rokrakstu kolekciju</a></h1>
+            <h1>apskati Broces <a href="https://www.acadlib.lu.lv/broce/" target="_blank">manuskriptu</a> un <a href="https://www.acadlib.lu.lv/izstades/digitalizacija/jkbroces-kolekcija/" target="_blank">rokrakstu kolekciju</a></h1>
         </div>
 
         <div class="promotion">
-            <a href="https://fashionmuseum.shop/lv/prece/pastkarte-johans-kristofs-broce-cilveki-rigas-2/">
-                <img src="/Homework_2/img/promotion.png" alt="promotion">
+            <a href="https://fashionmuseum.shop/lv/prece/pastkarte-johans-kristofs-broce-cilveki-rigas-2/" target="_blank">
+                <img src="/Homework_2/img/promotion.png" alt="promotion" id="promotion-img">
             </a>
         </div>
     </div>
 
-    <div class="main">
-        <div class="article-feature" id="biography">
-            <h2>Biogrāfija</h2>
-            <h3>Bērnība un skolas laiks</h3>
-            <p>Johans Kristofs Broce piedzima <strong>1742. gada 12. septembrī Gerlicā</strong>. Agrā bērnībā viņš bijis ļoti slimīgs un staigāt varējis sākt tikai piecu gadu vecumā. Bez tam zēns tik lielā mērā slimojis ar acu slimībām, ka viņam nav gribējuši ļaut mācīties zīmēšanu. Ar laiku acu gaisma tomēr uzlabojusies, un, kā zināms, Broce gadu desmitiem gandrīz nepārtraukti zīmēja un sīkā rokrakstā izgatavoja tūkstošiem dokumentu un dažādu manuskriptu kopiju.</p>
-            <p>Brocem izdevās iestāties Gerlicas ģimnāzijā, gan bez jebkādām cerībām mācīties tālāk universitātē. Tomēr viņam palaimējās - tēva principāls Friče viņu uzņēma savā namā. Gan Broce pats saka, ka viņš šai namā turēts kā pašu bērns, tomēr pēc tā laika stāstījumiem vērojams, ka dzīve jaunietim tur nebija no vieglajām. Dienu viņš gājis skolā un pasniedzis privātstundas, bet vakaros līdz vēlai naktij palīdzējis Fričem savest kārtībā rēķinus. Plānu zīmēšanā Broce jau tolaik bija sasniedzis tādu meistarību, ka izgatavojis plānus pat Gerlicas pilsētas vajadzībām. Šī darba dzīve jaunībā norūdīja Broci un iemācīja viņam to pacietību, kuru vēl tagad apbrīnojam.</p>
-            <h3>Studijas universitātē</h3>
-            <p>1763. gadā Brocem tomēr izdevās iestāties Leipcigas universitātē. Leipcigā Broce iepazinās ar teologu un baznīcvēsturnieku profesoru Johanu Matiasu Šreku un kļuva par profesora jaunākā brāļa privātskolotāju un paša profesora privātsekretāru. Kad Šreks pārcēlās uz Vitenbergas universitāti, Broce viņam sekoja un viena gada laikā ieguva <strong>filozofijas doktora grādu</strong>. Broce no akadēmiskās karjeras atteicās, kad saņēma uzaicinājumu strādāt par mājskolotāju Rīgas rātskunga Fēgezaka ģimenē.</p>
-            <h3>Dzīve Rīgā</h3>
-            <p>Broce Rīgā ieradās 1768. gada decembrī. Par mājskolotāju Broce nostrādāja nepilnu gadu. Kad Rīgas Ķeizariskajā licejā atbrīojās subrektora vieta, Broce pieņēma šo piedāvājumu un <strong>mācīja licejā 46 gadus</strong>.</p>
-            <p>1783. gadā Broce kļuva par konrektoru un 1801. gadā pildīja arī liceja rektora pienākumus.</p>
-            <p>Pēc aiziešanas pensijā, 1815. gadā, Broce cerēja, ka pēc tik ilgas strādāšanas skolotāja amatā, kā arī latviešu valodas apgūšanas, viņš tiks iecelts par mācītāju kādā Rīgas latviešu draudzē. Tomēr šī iecere tā arī nekad nerealizējās. Neticis pie mācītāja vietas, Broce vēl aizrautīgāk nodevās iemīlotajam vaļaspriekam - vēstures un etnogrāfisko materiālu vākšanai, aprakstīšanai un zīmēšanai.</p>
-            <p>Pēc 1818. gada Broce uzturējies Rīgā, kur arī pavadījis savus pēdējos dzīves gadus līdz devās mūžībā <strong> 1823. gada 4. augustā</strong>. Broces kapavieta atrodas Lielajos kapos, Jēkaba nodalījumā. 1845. gadā tur tika uzstādīts tēlnieka G. Kelli smilšakmenī veidots piemineklis.</p>
-        </div>
-        
-        <div class="article-listing" id="art">
-          <h2>Radošā darbība</h2>
-            <p>Lielākā daļa Broces darbu tika radīti laikā no 1770. līdz 1818. gadam. Līdz ar ierašanos Rīgā, Broci aizrāva tās <strong>kultūrvide, cilvēki, arhitektūra</strong>, viņš nebija pievērsies kā konkrēta zīmēšanai, bet gan savos darbos attēloja to, kas pašam likās interesants, pievienojot arī īsu aprakstu.</p>
-            <p>Broces latviešu zemnieka sadzīves un tautas tērpu atainojums ir īpaši svarīgs Latvijas un latviešu vēstures pētniecībā, tomēr tieši arhitektūras pieminekļi ir tie, ko Broce savos zīmējumos attēlo visvairāk. Broces vizuālais materiāls mēdz būt vienīgais vēstures avots, kas sniedz vizuālu ieskatu par to, kāds ir bijis baznīcas arhitektoniskais izskats 18./19. gadsimtu mijā.</p>
-            <p>Broce savus darbus, kas tika apkopoti vairākos sējumos, kopā ar savu bibliotēku, pārdeva Rīgas pilsētai, kur tos novietoja Rīgas pilsētas bibliotēkā. Bibliotēkā, pirms tā nodega 1941. gadā, Broces darbi, to milzīgo apjomu dēļ, atradušies pat atsevišķā skapī. Materiāli negāja bojā ugunsgrēka laikā, jo atradās īpašos, ugunsdrošos apstākļos.</p>
-            <p>Skatoties no mākslinieciskās puses, Broces darbi ir veidoti, balstoties uz klasicisma stila principiem. Lai gan autors ir radījis šos zīmējumus praktisku mērķu vadīts, tomēr krājumos esošos darbus var pieskaitīt pie mākslas vēstures liecībām.</p>
-            <p>Broce savus zīmējumus nekad nebija plānojis publicēt. Iespējams, tāpēc Broce nav tik ļoti centies zīmējumu izstrādē, kā tas ir redzams darbos, kurus Broce ir nodevis publicēšanai, kā arī zīmējumus, kurus Broce ir radījis citu pētnieku darbiem. Vēstures pētniecībā lielāka nozīme ir tam, kas ir attēlots zīmējumos, nevis cik precīzi Broce ir piestrādājis pie perspektīvas vai cilvēku anatomijas.</p>
+    <div class="content-container">
+        <div class="main">
+            <div class="article-feature" id="biography">
+                <h2>Biogrāfija</h2>
+                <h3>Bērnība un skolas laiks</h3>
+                <p>Johans Kristofs Broce piedzima <strong>1742. gada 12. septembrī Gerlicā</strong>. Agrā bērnībā viņš bijis ļoti slimīgs un staigāt varējis sākt tikai piecu gadu vecumā. Bez tam zēns tik lielā mērā slimojis ar acu slimībām, ka viņam nav gribējuši ļaut mācīties zīmēšanu. Ar laiku acu gaisma tomēr uzlabojusies, un, kā zināms, Broce gadu desmitiem gandrīz nepārtraukti zīmēja un sīkā rokrakstā izgatavoja tūkstošiem dokumentu un dažādu manuskriptu kopiju.</p>
+                <p>Brocem izdevās iestāties Gerlicas ģimnāzijā, gan bez jebkādām cerībām mācīties tālāk universitātē. Tomēr viņam palaimējās - tēva principāls Friče viņu uzņēma savā namā. Gan Broce pats saka, ka viņš šai namā turēts kā pašu bērns, tomēr pēc tā laika stāstījumiem vērojams, ka dzīve jaunietim tur nebija no vieglajām. Dienu viņš gājis skolā un pasniedzis privātstundas, bet vakaros līdz vēlai naktij palīdzējis Fričem savest kārtībā rēķinus. Plānu zīmēšanā Broce jau tolaik bija sasniedzis tādu meistarību, ka izgatavojis plānus pat Gerlicas pilsētas vajadzībām. Šī darba dzīve jaunībā norūdīja Broci un iemācīja viņam to pacietību, kuru vēl tagad apbrīnojam.</p>
+                <h3>Studijas universitātē</h3>
+                <p>1763. gadā Brocem tomēr izdevās iestāties Leipcigas universitātē. Leipcigā Broce iepazinās ar teologu un baznīcvēsturnieku profesoru Johanu Matiasu Šreku un kļuva par profesora jaunākā brāļa privātskolotāju un paša profesora privātsekretāru. Kad Šreks pārcēlās uz Vitenbergas universitāti, Broce viņam sekoja un viena gada laikā ieguva <strong>filozofijas doktora grādu</strong>. Broce no akadēmiskās karjeras atteicās, kad saņēma uzaicinājumu strādāt par mājskolotāju Rīgas rātskunga Fēgezaka ģimenē.</p>
+                <h3>Dzīve Rīgā</h3>
+                <p>Broce Rīgā ieradās 1768. gada decembrī. Par mājskolotāju Broce nostrādāja nepilnu gadu. Kad Rīgas Ķeizariskajā licejā atbrīojās subrektora vieta, Broce pieņēma šo piedāvājumu un <strong>mācīja licejā 46 gadus</strong>.</p>
+                <p>1783. gadā Broce kļuva par konrektoru un 1801. gadā pildīja arī liceja rektora pienākumus.</p>
+                <p>Pēc aiziešanas pensijā, 1815. gadā, Broce cerēja, ka pēc tik ilgas strādāšanas skolotāja amatā, kā arī latviešu valodas apgūšanas, viņš tiks iecelts par mācītāju kādā Rīgas latviešu draudzē. Tomēr šī iecere tā arī nekad nerealizējās. Neticis pie mācītāja vietas, Broce vēl aizrautīgāk nodevās iemīlotajam vaļaspriekam - vēstures un etnogrāfisko materiālu vākšanai, aprakstīšanai un zīmēšanai.</p>
+                <p>Pēc 1818. gada Broce uzturējies Rīgā, kur arī pavadījis savus pēdējos dzīves gadus līdz devās mūžībā <strong> 1823. gada 4. augustā</strong>. Broces kapavieta atrodas Lielajos kapos, Jēkaba nodalījumā. 1845. gadā tur tika uzstādīts tēlnieka G. Kelli smilšakmenī veidots piemineklis.</p>
+            </div>
+
+            <div class="promotion2">
+                <a href="https://fashionmuseum.shop/lv/prece/pastkarte-johans-kristofs-broce-cilveki-rigas-2/" target="_blank">
+                    <img src="/Homework_2/img/promotion.png" alt="promotion2" id="promotion2-img">
+                </a>
+            </div>
+            
+            <div class="article-listing" id="art">
+            <h2>Radošā darbība</h2>
+                <p>Lielākā daļa Broces darbu tika radīti laikā no 1770. līdz 1818. gadam. Līdz ar ierašanos Rīgā, Broci aizrāva tās <strong>kultūrvide, cilvēki, arhitektūra</strong>, viņš nebija pievērsies kā konkrēta zīmēšanai, bet gan savos darbos attēloja to, kas pašam likās interesants, pievienojot arī īsu aprakstu.</p>
+                <p>Broces latviešu zemnieka sadzīves un tautas tērpu atainojums ir īpaši svarīgs Latvijas un latviešu vēstures pētniecībā, tomēr tieši arhitektūras pieminekļi ir tie, ko Broce savos zīmējumos attēlo visvairāk. Broces vizuālais materiāls mēdz būt vienīgais vēstures avots, kas sniedz vizuālu ieskatu par to, kāds ir bijis baznīcas arhitektoniskais izskats 18./19. gadsimtu mijā.</p>
+                <p>Broce savus darbus, kas tika apkopoti vairākos sējumos, kopā ar savu bibliotēku, pārdeva Rīgas pilsētai, kur tos novietoja Rīgas pilsētas bibliotēkā. Bibliotēkā, pirms tā nodega 1941. gadā, Broces darbi, to milzīgo apjomu dēļ, atradušies pat atsevišķā skapī. Materiāli negāja bojā ugunsgrēka laikā, jo atradās īpašos, ugunsdrošos apstākļos.</p>
+                <p>Skatoties no mākslinieciskās puses, Broces darbi ir veidoti, balstoties uz klasicisma stila principiem. Lai gan autors ir radījis šos zīmējumus praktisku mērķu vadīts, tomēr krājumos esošos darbus var pieskaitīt pie mākslas vēstures liecībām.</p>
+                <p>Broce savus zīmējumus nekad nebija plānojis publicēt. Iespējams, tāpēc Broce nav tik ļoti centies zīmējumu izstrādē, kā tas ir redzams darbos, kurus Broce ir nodevis publicēšanai, kā arī zīmējumus, kurus Broce ir radījis citu pētnieku darbiem. Vēstures pētniecībā lielāka nozīme ir tam, kas ir attēlots zīmējumos, nevis cik precīzi Broce ir piestrādājis pie perspektīvas vai cilvēku anatomijas.</p>
+            </div>
         </div>
 
+        
         <div class="sidebar" id="significance">
-        <h2>Vēsturiskā nozīme</h2>
-        <p>Johana Kristofa Broces darbu sējumi sniedz neatkārtojamu informāciju par luteriskajām baznīcām visā Latvijas teritorijā. Broces zīmējumi, kas attēlo baznīcas un to apkārtni 18. un 19. gadsimta mijā, kad Latvijas teritorija atradās Krievijas impērijas sastāvā, bieži vien ir vienīgais vizuālais avots, kas saglabājies no konkrētā laika posma. Tāpat svarīgi ir arī Broces veidotie apraksti pie dievnamu zīmējumiem, tāpēc to sniegtajai informācijai ir tik liela nozīme Latvijas evaņģēliski luteriskās baznīcas vēstures izzināšanā.</p>
-        <p>Iespaidīgajā Broces darbā apkopota ļoti daudzveidīga informācija. Sējumos Broce ir zīmējis un aprakstījis ģerboņus un to nēsātājus, zīmogus, dažādām personām veltītus uzrakstus uz ēkām, zvaniem, kapakmeņiem utt., personu portretus, sniedzot arī tajos attēloto personu aprakstus, etnogrāfisko materiālu – latviešu tautastērpus, atspoguļojot arī citu Latvijas teritorijā dzīvojošo nacionalitāšu apģērbu, kā arī dažādu profesiju formas tērpus, ieročus, ratus, rotaslietas, arī arheoloģiskās senlietas, baznīcas, muižas, pilis un citas svarīgas ēkas, kā arī to detaļas, un dažāda veida kartes un plānus.</p>
+            <h2>Vēsturiskā nozīme</h2>
+            <p>Johana Kristofa Broces darbu sējumi sniedz neatkārtojamu informāciju par luteriskajām baznīcām visā Latvijas teritorijā. Broces zīmējumi, kas attēlo baznīcas un to apkārtni 18. un 19. gadsimta mijā, kad Latvijas teritorija atradās Krievijas impērijas sastāvā, bieži vien ir vienīgais vizuālais avots, kas saglabājies no konkrētā laika posma. Tāpat svarīgi ir arī Broces veidotie apraksti pie dievnamu zīmējumiem, tāpēc to sniegtajai informācijai ir tik liela nozīme Latvijas evaņģēliski luteriskās baznīcas vēstures izzināšanā.</p>
+            <p>Iespaidīgajā Broces darbā apkopota ļoti daudzveidīga informācija. Sējumos Broce ir zīmējis un aprakstījis ģerboņus un to nēsātājus, zīmogus, dažādām personām veltītus uzrakstus uz ēkām, zvaniem, kapakmeņiem utt., personu portretus, sniedzot arī tajos attēloto personu aprakstus, etnogrāfisko materiālu – latviešu tautastērpus, atspoguļojot arī citu Latvijas teritorijā dzīvojošo nacionalitāšu apģērbu, kā arī dažādu profesiju formas tērpus, ieročus, ratus, rotaslietas, arī arheoloģiskās senlietas, baznīcas, muižas, pilis un citas svarīgas ēkas, kā arī to detaļas, un dažāda veida kartes un plānus.</p>
+            
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         <a href="#top">Atpakaļ uz sākumu</a>
         <p>Vizma Boļše</p>
         <p>DE0824 Web Technologies</p>

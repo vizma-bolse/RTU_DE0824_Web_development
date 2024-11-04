@@ -1,98 +1,306 @@
+/* Base styles */
 body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
     background-color: #ebe9e1;
 }
 
-#logo {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Adjust for large screens */
+    padding: 20px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 10px;
-    /* justify-items: center; */
-    width: 100%;
+.brand {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-dropdown {
+    display: none; /* Hide dropdown by default */
+}
+
+.nav-buttons {
+    display: flex; /* Display buttons by default */
+    align-items: center; /* Center content vertically */
+}
+
+.tools {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Hero section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column */
+    text-align: center;
+}
+
+.hero-feature,
+.call-to-action,
+.promotion{
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 100%; /* Responsive image */
+    height: auto;
+}
+
+/* Main section */
+.main {
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive styles */
 @media (max-width: 576px) {
-    header {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        align-items: center;
+    .header-container {
+        display: grid; /* Use grid layout */
+        grid-template-columns: 1fr 1fr; /* Two columns for nav and tools */
+        grid-template-rows: auto auto; /* Two rows: brand and nav/tools */
     }
+
     .brand {
-        grid-row: 1;
-        justify-self: center;
+        grid-column: 1 / -1; /* Make brand span across both columns */
     }
+
+    #logo {
+        max-width: 70%; /* Smaller for mobile screens */
+        max-height: 100px; /* Adjust maximum height */
+    }
+
     .nav {
-        grid-row: 2;
-        grid-column: 1;
-        display: flex;
-        justify-content: center;
+        grid-column: 1; /* Place nav in the first column */
+        flex-direction: column;
+        align-items: stretch;
     }
+
+    .nav-dropdown {
+        display: block; /* Show dropdown menu on phone screens */
+    }
+
+    .nav-buttons {
+        display: none; /* Hide buttons on phone screens */
+    }
+
     .tools {
-        grid-row: 2;
-        grid-column: 2;
-        justify-self: end;
+        grid-column: 2; /* Place tools in the second column */
+    }
+
+    .hero {
+        grid-template-rows: auto; /* Single row for hero */
+    }
+
+    .hero-feature {
+        display: none;
+    }
+
+    .promotion {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        grid-template-rows: auto auto auto; /* Three rows for articles */
+    }
+
+    .promotion2 {
+        grid-row: 2; /* Specify the row for promotion2 */
+        grid-column: 1 / -1; /* Make it span across both columns */
+        margin: 20px 0; /* Optional margin */
+    }
+
+    .promotion2 img {
+        width: 100%; /* Makes the image take full width of its container */
+        height: auto; /* Maintains aspect ratio */
+        object-fit: contain; /* Ensures the image is fully visible */
+    }
+
+    .sidebar {
+        display: none;
     }
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-    #logo {
-        width: 80%;
-        max-width: 300px;
-    }
-    header {
+@media (min-width: 577px) and (max-width: 992px) {
+    .header-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        justify-items: center;
+        grid-template-columns: 1fr 2fr 1fr; /* Adjust for large screens */
+        width: 100%; /* Ensure it fits within the page */
+        padding: 10px; /* Adjust padding if needed */
+        box-sizing: border-box; /* Include padding in total width */
     }
+
     .brand {
-        grid-column: 1;
-        justify-self: start;
-    }
-    .nav {
-        grid-column: 2;
         display: flex;
-        /* justify-content: space-around; */
         justify-content: center;
+        align-items: center;
+        grid-column: 1;
     }
+
+    #logo {
+        max-width: 100%; /* Adjust for tablet screens */
+        max-height: 150px; /* Adjust maximum height */
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-column: 2; /* Place nav in the second column */
+    }
+
+    .nav-dropdown {
+        display: none; /* Hide dropdown on tablet and laptop screens */
+    }
+
+    .nav-buttons {
+        display: flex; /* Show buttons on tablet and laptop screens */
+    }
+
     .tools {
-        grid-column: 3;
-        justify-self: end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-column: 3; /* Place tools in the third column */
+    }
+
+    .hero {
+        grid-template-rows: auto auto; /* Hero feature and call to action */
+    }
+
+    .promotion {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* Two columns for articles */
+        grid-template-rows: auto; /* One row for articles */
+    }
+
+    .promotion2 {
+        grid-row: 1; /* Specify the row for promotion2 */
+        grid-column: 2; /* Make it span across both columns */
+        margin: 20px 0; /* Optional margin */
+    }
+
+    .promotion2 img {
+        width: 100%; /* Makes the image take full width of its container */
+        height: auto; /* Maintains aspect ratio */
+        object-fit: contain; /* Ensures the image is fully visible */
+    }
+
+    .article-listing {
+        grid-column: 1 / -1; /* Article listing in second column */
     }
 }
 
-@media (min-width: 992px) {
-    #logo {
-        width: 60%;
-        max-width: 400px;
-    }
-    header {
+@media (min-width: 993px) {
+    .header-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        justify-items: center;
+        grid-template-columns: 1fr 2fr 1fr; /* Adjust for large screens */
+        width: 100%; /* Ensure it fits within the page */
+        padding: 10px; /* Adjust padding if needed */
+        box-sizing: border-box; /* Include padding in total width */
     }
+
     .brand {
-        grid-column: 1;
-        justify-self: start;
-    }
-    .nav {
-        grid-column: 2;
         display: flex;
-        /* justify-content: space-around; */
         justify-content: center;
+        align-items: center;
+        grid-column: 1;
     }
+
+    #logo {
+        max-width: 100%; /* Adjust for tablet screens */
+        max-height: 150px; /* Adjust maximum height */
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-column: 2; /* Place nav in the second column */
+    }
+
+    .nav-dropdown {
+        display: none; /* Hide dropdown on tablet and laptop screens */
+    }
+
+    .nav-buttons {
+        display: flex; /* Show buttons on tablet and laptop screens */
+    }
+
     .tools {
-        grid-column: 3;
-        justify-self: end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-column: 3; /* Place tools in the third column */
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; /* Three columns for hero section */
+    }
+
+    .promotion {
+        grid-column: 3; /* Promotion in third column */
+    }
+
+     /* Set a specific height for both article-feature and promotion images */
+     #feature-img {
+        height: 300px; /* Same height as promotion image */
+        width: 100%; /* Make image responsive */
+        object-fit: contain; /* Ensure the full image is visible */
+    }
+
+    #promotion-img {
+        height: 300px; /* Same height as feature image */
+        width: 100%; /* Make image responsive */
+        object-fit: contain; /* Ensure the full image is visible */
+    }
+
+    .article-feature {
+        grid-column: 1; /* Article feature in first column */
+    }
+
+    .promotion2 {
+        display: none;
+    }
+
+    .content-container {
+        display: grid; 
+        grid-template-columns: 2fr 1fr; /* Main content + Sidebar */
+        width: 100%; 
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for articles */
+    }
+
+    .sidebar {
+        grid-column: 2; /* Sidebar in the second column */
     }
 }
