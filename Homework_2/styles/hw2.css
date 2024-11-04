@@ -238,10 +238,7 @@ button:active {
         display: none; /* Hide dropdown on tablet and laptop screens */
     }
 
-    .nav-buttons button{
-        padding: 5px 5px; /* Increase padding for larger buttons */
-        font-size: 10px; /* Slightly larger font */
-    }
+ 
 
     .tools {
         display: flex;
