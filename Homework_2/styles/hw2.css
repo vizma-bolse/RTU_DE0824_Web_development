@@ -209,7 +209,6 @@ button:active {
     .header-container {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr; /* Adjust for large screens */
-        width: 100%; /* Ensure it fits within the page */
         max-width: 100%;
         padding: 10px; /* Adjust padding if needed */
         box-sizing: border-box; /* Include padding in total width */
@@ -230,7 +229,7 @@ button:active {
 
     .nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         grid-column: 2; /* Place nav in the second column */
     }
@@ -239,13 +238,9 @@ button:active {
         display: none; /* Hide dropdown on tablet and laptop screens */
     }
 
-    .nav-buttons {
+    .nav-buttons button{
         display: flex; /* Show buttons on tablet and laptop screens */
         margin: 0 5px;
-    }
-
-    button {
-        font-size: 13px;
     }
 
     .tools {
