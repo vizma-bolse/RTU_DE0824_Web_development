@@ -239,7 +239,7 @@ button:active {
     }
 
     .nav-buttons button{
-        padding: 10px 15px; /* Increase padding for larger buttons */
+        padding: 5px 10px; /* Increase padding for larger buttons */
         font-size: 14px; /* Slightly larger font */
     }
 
