@@ -238,6 +238,11 @@ button:active {
         display: none; /* Hide dropdown on tablet and laptop screens */
     }
 
+    .nav-buttons button {
+        padding: 8px 16px; /* Even larger padding for laptop view */
+        font-size: 12px; /* Larger font for emphasis */
+    }
+
     .tools {
         display: flex;
         justify-content: flex-end;
