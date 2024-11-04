@@ -6,6 +6,23 @@ body {
     background-color: #ebe9e1;
 }
 
+h1 {
+    color: #e43d12;
+}
+
+a {
+    color: #ffa2b6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3, p {
+    color: #d6536d;
+}
+
 .header-container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; /* Adjust for large screens */
@@ -75,6 +92,14 @@ body {
 
 /* Responsive styles */
 @media (max-width: 576px) {
+    p {
+        font-size: 11px;
+    }
+
+    h1 {
+        font-size: 25px;
+      }
+
     .header-container {
         display: grid; /* Use grid layout */
         grid-template-columns: 1fr 1fr; /* Two columns for nav and tools */
@@ -143,6 +168,14 @@ body {
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
+    p {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 30px;
+      }
+
     .header-container {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr; /* Adjust for large screens */
@@ -156,6 +189,7 @@ body {
         justify-content: center;
         align-items: center;
         grid-column: 1;
+        margin-right: 20px;
     }
 
     #logo {
@@ -191,6 +225,7 @@ body {
 
     .promotion {
         display: none;
+        margin-right: 20px;
     }
 
     .main {
@@ -217,6 +252,14 @@ body {
 }
 
 @media (min-width: 993px) {
+    p {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+      }
+
     .header-container {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr; /* Adjust for large screens */
@@ -291,13 +334,21 @@ body {
 
     .content-container {
         display: grid; 
-        grid-template-columns: 2fr 1fr; /* Main content + Sidebar */
+        grid-template-columns: 3fr 1fr; /* Main content + Sidebar */
         width: 100%; 
     }
 
     .main {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns for articles */
+        grid-template-columns: 1fr 2fr; /* Two columns for articles */
+    } 
+
+    .article-feature {
+        margin-right: 20px;
+    }
+
+    .article-listing {
+        margin-left: 20px;
     }
 
     .sidebar {
