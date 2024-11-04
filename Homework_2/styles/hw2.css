@@ -48,7 +48,31 @@ h2, h3, p {
 .nav-buttons {
     display: flex; /* Display buttons by default */
     align-items: center; /* Center content vertically */
+    cursor: pointer;
+    border: solid rgba(187, 204, 0, 0.027);
+    font-family: Roboto;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    transition: 556ms;
+    width: 335px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 11px;
+    background: rgb(255, 162, 182);
+    --hover-bgc: #e43d12;
+    --hover-color: #f1f4f7;
+    --hover-borderc: #cc006900;
+    --hover-borderSize: 0px;
 }
+
+.nav-buttons:hover{
+    color: rgb(241, 244, 247);
+    width: 337px;
+    background: rgb(228, 61, 18) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-color: rgba(204, 0, 105, 0);
+    border-width: 0px;
+    border-style: solid;
+    }
 
 .tools {
     display: flex;
