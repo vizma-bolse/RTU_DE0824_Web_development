@@ -238,7 +238,11 @@ button:active {
         display: none; /* Hide dropdown on tablet and laptop screens */
     }
 
- 
+    .nav-buttons {
+        max-width: 50px; /* Adjust for tablet screens */
+        max-height: 100%; /* Adjust maximum height */
+    }
+
 
     .tools {
         display: flex;
