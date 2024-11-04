@@ -57,9 +57,11 @@ button {
     border: none; /* Remove default borders */
     border-radius: 5px; /* Slightly rounded corners */
     padding: 10px 20px; /* Padding for a comfortable click area */
-    font-size: 1rem; /* Adjust font size */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    white-space: nowrap;
+    width: auto;
+    font-size: 16px;
 }
 
 /* Hover and active states */
@@ -241,8 +243,7 @@ button:active {
     }
 
     button {
-        width: 100px;
-        height: 35px;
+        font-size: 14px;
     }
 
     .tools {
@@ -326,11 +327,6 @@ button:active {
 
     .nav-buttons {
         display: flex; /* Show buttons on tablet and laptop screens */
-    }
-
-    button {
-        width: 120px;
-        height: 40px;
     }
 
     .tools {
