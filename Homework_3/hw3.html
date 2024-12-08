@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+<div class="container">
+    <div class="action-container">
+        <form>
+            <div>
+                <div>
+                    <span>Start Value:</span>
+                    <input class="start-value" type="number" value="1" step="1" min="1"/>
+                </div>
+                <div>
+                    <span>End Value:</span>
+                    <input class="end-value" type="number" value="100" step="1"/>
+                </div>
+                <div>
+                    <span>Fizz Value:</span>
+                    <input class="fizz-value"  type="number" value="3" step="1" min="1"/>
+                </div>
+                <div>
+                    <span>Buzz Value:</span>
+                    <input  class="buz-value"  type="number" value="5" step="1" min="1"/>
+                </div>
+            </div>
+
+            <div class="action-container-buttons">
+                <button type="button" onclick="resetFields()">Reset</button>
+                <button type="button" onclick="refresh()">Refresh</button>
+                <button type="button" onclick="clearBoxes()">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="box-container">
+    </div>
+</div>
+<script src="script.js" async></script>
 </body>
 </html>
