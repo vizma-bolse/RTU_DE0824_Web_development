@@ -46,7 +46,6 @@ function clearBoxes() {
 }
 
 function resetFields() {
-    // You may want to reset to the initial values when the page loads
     startValue.value = 1;
     endValue.value = 100;
     fizzValue.value = 3;
@@ -54,7 +53,6 @@ function resetFields() {
     refresh();
 }
 
-// Call refresh() when the page has loaded to generate the boxes
 document.addEventListener('DOMContentLoaded', function () {
     refresh();
 });
