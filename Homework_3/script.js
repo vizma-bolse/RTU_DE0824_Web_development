@@ -15,29 +15,28 @@ function createBox() {
 }
 
 function generateText(index) {
-    if (index % fizzValue.value === 0) {
-        return `${index}=Fizz`
+    if (index % fizzValue.value === 0 && index % buzzValue.value === 0) {
+        return { text: `${index}=FizzBuzz`, className: 'fizzbuzz' };
+    } else if (index % fizzValue.value === 0) {
+        return { text: `${index}=Fizz`, className: 'fizz' };
     } else if (index % buzzValue.value === 0) {
-        return `${index}=Buzz`
+        return { text: `${index}=Buzz`, className: 'buzz' };
     }
 
-    return index;
-}
-
-function resetFields() {
-    startValue.value = 1;
-    endValue.value = 100;
-    fizzValue.value = 3;
-    buzzValue.value = 5;
-
-    refresh()
+    return { text: index, className: '' };
 }
 
 function refresh() {
     clearBoxes();
     for (let i = startValue.value; i <= endValue.value; i++) {
         const [box, boxText] = createBox();
-        boxText.innerText = generateText(i);
+        const result = generateText(i);
+        boxText.innerText = result.text;
+        
+        if (result.className) {
+            box.classList.add(result.className);
+        }
+        
         container.appendChild(box);
     }
 }
