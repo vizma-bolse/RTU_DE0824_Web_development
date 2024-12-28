@@ -6,10 +6,10 @@ const container = document.querySelector('.box-container');
 
 function createBox() {
     const box = document.createElement('div');
-    box.classList.add('box')
-    const boxText = document.createElement('p')
-    boxText.classList.add('box-text')
-    box.appendChild(boxText)
+    box.classList.add('box');
+    const boxText = document.createElement('p');
+    boxText.classList.add('box-text');
+    box.appendChild(boxText);
 
     return [box, boxText];
 }
@@ -45,4 +45,16 @@ function clearBoxes() {
     container.innerHTML = '';
 }
 
-resetFields();
+function resetFields() {
+    // You may want to reset to the initial values when the page loads
+    startValue.value = 1;
+    endValue.value = 100;
+    fizzValue.value = 3;
+    buzzValue.value = 5;
+    refresh();
+}
+
+// Call refresh() when the page has loaded to generate the boxes
+document.addEventListener('DOMContentLoaded', function () {
+    refresh();
+});
